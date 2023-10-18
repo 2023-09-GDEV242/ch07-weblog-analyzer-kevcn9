@@ -158,7 +158,7 @@ public class LogAnalyzer
     {
         int busiestMonth = 0;
         int busiest = 0;
-        for(int month = 0; month < monthCounts.length; month++)
+        for(int month = 1; month < monthCounts.length; month++)
         {
             if(monthCounts[busiestMonth] < monthCounts[month])
             {
@@ -294,7 +294,7 @@ public class LogAnalyzer
      */
     public int[] analyzeWeekPattern()
     {
-        for(int day = 0; day < 7; day++) 
+        for(int day = 1; day < 7; day++) 
         { 
             weekCounts[day] = dayCounts[day];
         }
